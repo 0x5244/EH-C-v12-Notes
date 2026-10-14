@@ -1,4 +1,4 @@
-FROM rust:1.88.0-bookworm@sha256:af306cfa71d987911a781c37b59d7d67d934f49684058f96cf72079c3626bfe0 AS mdbook-builder
+FROM rust:1.99.0-bookworm@sha256:114c7a4425406451c2866b6aafe69fe29b1b298832db1277d411ac73c82d04d6 AS mdbook-builder
 
 COPY mdbook-no-client-js.patch /tmp/mdbook-no-client-js.patch
 COPY verify-binary.rs /tmp/verify-binary.rs
